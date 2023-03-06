@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+/* Left Admin panel top start */
+.left-navbar {
+    position: absolute;
+    top: 0;
+    width: 355px;
+    height: 100vh;
+    background-color: #720418;
+}
+
+.navs-library {
+    width: 208px;
+    height: 28px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.navs-top {
+    display: flex;
+    margin-top: 85px;
+    margin-left: 35px;
+}
+
+.navs-library :first-child {
+    font-weight: 900;
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.navs-library :nth-child(3) {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 13px;
+    
+}
+
+.navs-library div {
+    width: 200px;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 6px;
+}
+
+/* Left Admin panel top end */
+
+/* Left Admin panel bottom start */
+
+.navs-bottom {
+    position: absolute;
+    margin-top: 185px;
+    margin-left: 40px;
+    display: flex;
+} 
+
+.navs-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;  
+}
+.navs-bottom ul {
+    margin-top: 72px;
+    margin-left: 15px;
+}
+
+.navs-bottom ul li {
+    color: #fff;
+    margin-bottom: 55px;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navs-img img {
+    margin-bottom: 35px;
+}
+
+
+/* .navs-bottom ul li {
+    margin-top: 50px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 40px;
+} */
+
