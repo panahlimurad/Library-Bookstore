@@ -2,13 +2,20 @@
     box-sizing: border-box;
 }
 /* Left Admin panel top start */
-.left-navbar {
-    position: absolute;
+
+.left-container {
+    background-color: #720418;
+    height: 100%;
+    width: 355px;
+    position: fixed;
     top: 0;
+    left: 0;
+}
+/* .left-navbar {
+     background-color: #231b88;
     width: 355px;
     height: 100vh;
-    background-color: #720418;
-}
+} */
 
 .navs-library {
     width: 208px;
@@ -49,16 +56,18 @@
 /* Left Admin panel bottom start */
 
 .navs-bottom {
-    position: absolute;
-    margin-top: 185px;
-    margin-left: 40px;
+    /* position: absolute; */
+    /* margin-top: 60px; */
     display: flex;
+    background-color: #720418;
+    width: 355px;
 } 
 
 .navs-img {
     display: flex;
     flex-direction: column;
     margin-top: 60px;  
+    margin-left: 40px;
 }
 .navs-bottom ul {
     margin-top: 72px;
@@ -77,12 +86,98 @@
     margin-bottom: 35px;
 }
 
+/* Left Admin panel bottom end */
 
-/* .navs-bottom ul li {
-    margin-top: 50px;
-    color: #ffffff;
-    font-weight: 400;
+/* right admin panel top */
+
+.right-admin-panel {
+    margin-left: 390px;
+    margin-right: 100px;
+    height: 100%;
+}
+
+.add-book {
+    margin-top: 130px;
+}
+
+.add-book div {
+    margin-top: 30px;
+}
+
+.add-book h1 {
+    width: 150px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 30px;
+    align-items: center;
+    color: #333333;
+}
+
+.add-book p {
+    width: 115px;
+    height: 35px;
+    font-weight: 600;
     font-size: 18px;
-    margin-left: 40px;
-} */
+    align-items: center;
+    color: #333333;
+    background-color: #fff;
+}
 
+.add-book input {
+    margin-top: 5px;
+    border-radius: 35px;
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgba(57, 31, 0blue, 0.5alpha);
+}
+
+.add-book i {
+    width: 60px;
+    height: 40px;
+    border-radius: 35px;
+    color: #fff;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #ff8b00;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+/* book form */
+
+.book-form {
+    background-color: aquamarine;
+    margin-top: 170px;
+}
+
+.book-form p {
+    color: #333333;
+    width: 100px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.book-form input {
+    box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+    border-radius: 10px;
+    color: #E2E6EE;
+    border: 1px solid #E2E6EE;
+}
+
+.book-form textarea {
+    box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+    border-radius: 10px;
+    color: #E2E6EE;
+    border: 1px solid #E2E6EE;
+}
+
+.book-form button {
+    height: 40px;
+    background-color: #ff8b00;
+    border-radius: 10px;
+}
