@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+
+/* ADMIN PANEL START */
+
 /* Left Admin panel top start */
 
 .left-container {
@@ -11,6 +14,7 @@
     top: 0;
     left: 0;
 }
+
 /* .left-navbar {
      background-color: #231b88;
     width: 355px;
@@ -28,6 +32,13 @@
     display: flex;
     margin-top: 85px;
     margin-left: 35px;
+}
+
+.navs-top i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
 }
 
 .navs-library :first-child {
@@ -51,13 +62,9 @@
     margin-bottom: 6px;
 }
 
-/* Left Admin panel top end */
-
-/* Left Admin panel bottom start */
+/* Left Admin panel bottom */
 
 .navs-bottom {
-    /* position: absolute; */
-    /* margin-top: 60px; */
     display: flex;
     background-color: #720418;
     width: 355px;
@@ -85,8 +92,6 @@
 .navs-img img {
     margin-bottom: 35px;
 }
-
-/* Left Admin panel bottom end */
 
 /* right admin panel top */
 
@@ -141,6 +146,7 @@
     text-align: center;
     font-size: 20px;
     background-color: #ff8b00;
+    cursor: pointer;
 }
 
 ::placeholder {
@@ -150,13 +156,12 @@
 /* book form */
 
 .book-form {
-    background-color: aquamarine;
     margin-top: 170px;
 }
 
 .book-form p {
     color: #333333;
-    width: 100px;
+    width: 200px;
     height: 35px;
     font-weight: 600;
     font-size: 18px;
@@ -178,6 +183,127 @@
 
 .book-form button {
     height: 40px;
-    background-color: #ff8b00;
+    background: #ff8b00;
     border-radius: 10px;
+}
+ 
+/* join us */
+
+.join-us {
+    margin-top: 170px;
+}
+
+.join-us p {
+    font-weight: 600;
+    color: #333333;
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+thead {
+    background-color:#720418;
+    color: #fff;
+}
+
+/* contact */
+
+.contact {
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.phone-menu {
+    background-color: #720418;
+    display: flex;
+    padding: 15px;
+    display: none; 
+}
+
+.phone-menu i {
+    color: #fff;
+    font-size: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .left-container {
+        display: none;
+    }
+    .right-admin-panel {
+       margin-left: 10px;
+    }
+    .add-book input {
+        width: 250px;
+    }
+
+    .phone-menu {
+        /* display: block; */
+    }
+}
+
+
+/* ADMIN PANEL END */
+
+/* ADMIN LOGIN START*/
+
+ .admin-login{
+    background-color: #720418;
+    height: 100%;
+}
+
+.login-panel {
+    background-color: #fff;
+    width: 40%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.login-panel h1 {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.panel {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.panel button {
+    background: #ff8b00;
+    margin-top: 30px;
+}
+/* For phone */
+@media only screen and (max-width: 480px){
+    .login-panel h1{
+        font-size: 20px;
+    }
+}
+
+/* ADMIN LOGIN END*/
+
+/* HOME PAGE START */
+
+/* header */
+.icon-top {
+    color: #720418;
+    margin-left: 10px;
+}
+
+.icon-top div {
+    background-color: #720418;
+    width: 130px;
+    height: 1px;
+}
+
+.icon-small {
+    /* display: flex; */
+    margin-right: 300px;
+    margin-top: 40px;
 }
