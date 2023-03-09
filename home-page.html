@@ -1,88 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 
-    <!-- css and reset -->
-    <link rel="stylesheet" href="/src/reset.css" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <title>Home Page</title>
-  </head>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet" />
 
-  <body>
-    <div class="home-page">
-      <div class="container">
-        <header>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="icon-small d-flex">
-              <div>
-                <img src="/src/medium.svg" alt="" />
-              </div>
-              <div class="icon-top">
-                <p>LIBRARY</p>
-                <div></div>
-                <p>Admin Panel</p>
-              </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link nav-active mr-3" href="#">Home</a>
+  <!-- css and reset -->
+  <link rel="stylesheet" href="/src/reset.css" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Home Page</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="position-absolute position-fixed fixed-top bg-light" style="z-index: 10;">
+    <div class="container">
+      <!-- Hamburger -->
+      <div class="home-icon">
+        <i class="fa-regular fa-user display-5"></i>
+        <i class="fa-sharp fa-solid fa-bars"></i>
+      </div>
+      <div class="row mt-5">
+        <div class="col-3 d-flex">
+          <div>
+            <img src="/src/img/medium.svg" alt="" />
+          </div>
+          <div class="ml-2">
+            <p>LIBRARY</p>
+            <div class="border-bottom"></div>
+            <p>Admin Panel</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link font-weight-bold" style="color: #ff8b00; border-bottom: 1px solid #ff8b00 ;"
+                    href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link  mr-3" href="#">Catalog</a>
+                  <a class="nav-link" href="#">Catalog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link  mr-3" href="#">About store</a>
+                  <a class="nav-link" href="#">About Store</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link  mr-3" href="#">Contact Us</a>
+                  <a class="nav-link" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="#">Search</a>
+                  <a class="nav-link" href="#">Search</a>
                 </li>
               </ul>
             </div>
-            <i class="fa-regular fa-user">Join</i>
           </nav>
-        </header>
+        </div>
+        <div class="col-3 d-flex mt-2">
+          <i class="fa-regular fa-user display-5"></i>
+          <p class="h6 ml-2 pe-auto" style="cursor: pointer;">Join Us</p>
+        </div>
       </div>
     </div>
-    <script src="/src/app.js"></script>
-  </body>
+  </header>
+  <!-- Main -->
+  <main class="my-5 pt-5">
+    <div class="container">
+      <section class="mt-5">
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <h class="h4 font-weight-bold">Books From A to Z</h>
+            <p class="mt-3">In our store you can find a book for every taste.A large assortiment.Nice prices.Interesting
+              stories</p>
+            <button type="button" class="btn mt-4 mb-4 col-md-6" style="color: #fff; background-color: #ff8b00;">Go to
+              Catalog</button>
+          </div>
+          <div class="col-md-6">
+            <img style="width: 100%;" src="/src/img/image.png" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- Catalog -->
+      <section>
+        <div class="row">
+          <div class="col-md-12 mt-5">
+            <div class="text-center font-weight-bold h4 mt-2">Catalog</div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <!-- <div class="col-4">
+            <div class="card-body card shadow text-center mt-3 h5">Action</div>
+          </div> -->
+        </div>
+      </section>
+      <!-- About -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center font-weight-bold h4 mt-2">About</div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-3 d-flex align-items-center">
+            <div class="font-weight-bold h1 mr-2 ml-2">35</div>
+            <div class="h6">Branches the country</div>
+          </div>
+          <div class="col-md-3 d-flex align-items-center">
+            <div class="font-weight-bold h1 mr-2 ml-2">898</div>
+            <div>Branches the country</div>
+          </div>
+          <div class="col-md-3 d-flex align-items-center">
+            <div class="font-weight-bold h1 mr-2 ml-2">8659</div>
+            <div>Branches the country</div>
+          </div>
+          <div class="col-md-3 d-flex align-items-center">
+            <div class="font-weight-bold h1 mr-2 ml-2">72</div>
+            <div>Branches the country</div>
+          </div>
+        </div>
+      </div>
+      <!-- Delivery -->
+      <div class="row mt-5">
+        <div class="col-md-12 mt-5">
+          <div class="font-weight-bolder h4 text-center">Delivery</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <div class="text-center">We work without holidays and weekends! Residents of Kiev can receive an order on the
+            day of its
+            registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the
+            location of the settlement and the selected delivery method. Orders over UAH 1000 are delivered free of
+            charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order
+            basket, after selecting the delivery city. More details</div>
+        </div>
+      </div>
+      <!-- Social Bar -->
+      <div class="row mt-5">
+        <div class="col-md-12 mt-5">
+          <div class="text-center font-weight-bold h4">Follow us on social media</div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-4">
+          <div class="text-right display-3" style="color: #241400; cursor: pointer;"><i
+              class="fa-brands fa-facebook"></i></div>
+        </div>
+        <div class="col-4">
+          <div class="text-center display-3" style="color: #241400; cursor: pointer;"><i
+              class="fa-brands fa-twitter"></i></div>
+        </div>
+        <div class="col-4">
+          <div class="text-left display-3" style="color: #241400; cursor: pointer;"><i
+              class="fa-brands fa-instagram"></i></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer style="background-color: #241400; height: 100%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="col-3 d-flex mt-5">
+            <div class="mt-5">
+              <img src="/src/img/big-icon.svg" alt="" />
+            </div>
+            <div class="ml-2 mt-5">
+              <p style="color: #fff;">LIBRARY</p>
+              <div class="border-bottom mt-1 mb-1"></div>
+              <div style="color: #fff;">Book Store</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 text-light mt-5 p-3">
+          <div class="h5">Popular</div>
+          <div class="mb-2">Programming</div>
+          <div class="mb-2">Books for children</div>
+          <div class="mb-2">Pshychology</div>
+          <div>Business</div>
+        </div>
+        <div class="col-md-2 text-light mt-5 p-3">
+          <div class="h5">Cash</div>
+          <div class="mb-2">Delivery </div>
+          <div class="mb-2">Payments</div>
+          <div>About the store</div>
+        </div>
+        <div class="col-md-2 text-light mt-5 p-3">
+          <div class="h5">Help</div>
+          <div class="mb-2">Contacts</div>
+          <div class="mb-2">Purchase return</div>
+          <div>Buyer help</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5 class="modal-title h4 font-weight-bold text-center mt-3" id="exampleModalLabel">Join Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1"></label>
+              <input type="email" class="form-control" placeholder="Full Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"></label>
+              <input type="password" class="form-control" placeholder="Email" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: #ff8b00;">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/src/app.js"></script>
+</body>
+
 </html>

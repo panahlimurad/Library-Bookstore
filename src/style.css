@@ -1,3 +1,11 @@
+
+/* Home page-de kicik olcude hamburger cixmir */
+/* home page-de footer kicik olcude soze qulaq asmir) */
+
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -243,8 +251,9 @@ thead {
     .phone-menu {
         /* display: block; */
     }
-}
 
+  
+}
 
 /* ADMIN PANEL END */
 
@@ -280,10 +289,14 @@ thead {
     margin-top: 30px;
 }
 /* For phone */
-@media only screen and (max-width: 480px){
+@media screen and (max-width: 480px){
     .login-panel h1{
         font-size: 20px;
     }
+
+    /* .home-icon {
+        display: block;
+    } */
 }
 
 /* ADMIN LOGIN END*/
@@ -291,19 +304,7 @@ thead {
 /* HOME PAGE START */
 
 /* header */
-.icon-top {
-    color: #720418;
-    margin-left: 10px;
-}
 
-.icon-top div {
-    background-color: #720418;
-    width: 130px;
-    height: 1px;
-}
-
-.icon-small {
-    /* display: flex; */
-    margin-right: 300px;
-    margin-top: 40px;
+.home-icon {
+    display: none;
 }
